@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Bill Splitter | 7x9.dev</title>
+      <link rel="stylesheet" href="style.css" />
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+      <link
+         href="https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@700&family=Rubik&display=swap"
+         rel="stylesheet"
+      />
+      <script
+         src="https://kit.fontawesome.com/63d05c05ac.js"
+         crossorigin="anonymous"
+      ></script>
+   </head>
+   <body>
+      <div id="container">
+         <h1>Let's split the bill</h1>
+         <form>
+            <span class="inputTitle"
+               ><i class="fa-solid fa-receipt"></i>Bill amount ($)</span
+            >
+            <input id="billAmount" type="text" placeholder="0.00" />
+
+            <span class="inputTitle"
+               ><i class="fa-solid fa-user-plus"></i>How many people?</span
+            >
+            <input id="people" type="text" placeholder="Number of people" />
+
+            <button id="addTipBtn">Add a tip</button>
+            <div id="radioBtn">
+               <div class="tips">
+                  <input
+                     id="noTip"
+                     type="radio"
+                     name="tip"
+                     value="0"
+                     checked
+                  /><label for="noTip">0%</label>
+                  <input id="10Tip" type="radio" name="tip" value="10" /><label
+                     for="10Tip"
+                     >10%</label
+                  >
+                  <input id="20Tip" type="radio" name="tip" value="15" /><label
+                     for="20Tip"
+                     >20%</label
+                  >
+                  <input id="30Tip" type="radio" name="tip" value="20" /><label
+                     for="30Tip"
+                     >30%</label
+                  >
+               </div>
+            </div>
+            <button id="splitBtn">Split!</button>
+         </form>
+         <div id="amountPerPerson">
+            <div id="billSplit">
+               <h5>Bill</h5>
+               <span>$</span>
+               <span id="billPerPerson"></span>
+               <span>per person</span>
+            </div>
+            <div id="totalTip">
+               <h5>Tip</h5>
+               <span>$</span>
+               <span id="tipPerPerson"></span>
+               <span>per person</span>
+            </div>
+            <div id="totaBill">
+               <h5>Total</h5>
+               <span>$</span>
+               <span id="totalPerPerson"></span>
+               <span>per person</span>
+            </div>
+         </div>
+      </div>
+
+      <script src="index.js"></script>
+   </body>
+</html>
