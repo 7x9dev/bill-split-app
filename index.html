@@ -27,7 +27,7 @@
             <input id="billAmount" type="text" placeholder="0.00" />
 
             <span class="inputTitle"
-               ><i class="fa-solid fa-user-plus"></i>How many people?</span
+               ><i class="fa-solid fa-user"></i>How many people?</span
             >
             <input id="people" type="text" placeholder="Number of people" />
 
@@ -38,21 +38,27 @@
                      id="noTip"
                      type="radio"
                      name="tip"
-                     value="0"
+                     value="0.00"
                      checked
                   /><label for="noTip">0%</label>
-                  <input id="10Tip" type="radio" name="tip" value="10" /><label
-                     for="10Tip"
-                     >10%</label
-                  >
-                  <input id="20Tip" type="radio" name="tip" value="15" /><label
-                     for="20Tip"
-                     >20%</label
-                  >
-                  <input id="30Tip" type="radio" name="tip" value="20" /><label
-                     for="30Tip"
-                     >30%</label
-                  >
+                  <input
+                     id="10Tip"
+                     type="radio"
+                     name="tip"
+                     value="0.10"
+                  /><label for="10Tip">10%</label>
+                  <input
+                     id="20Tip"
+                     type="radio"
+                     name="tip"
+                     value="0.20"
+                  /><label for="20Tip">20%</label>
+                  <input
+                     id="30Tip"
+                     type="radio"
+                     name="tip"
+                     value="0.30"
+                  /><label for="30Tip">30%</label>
                </div>
             </div>
             <button id="splitBtn">Split!</button>
@@ -92,6 +98,7 @@
          </p>
       </div>
 
+      <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
       <script src="index.js"></script>
    </body>
 </html>
