@@ -1,0 +1,122 @@
+body {
+   background-image: url(bg.jpg);
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: center;
+   margin: 0;
+   display: flex;
+   align-items: center;
+   min-height: 100vh;
+   font-family: "Rubik", sans-serif;
+   font-weight: 400;
+}
+h1,
+h5 {
+   margin: 0;
+   font-family: "Frank Ruhl Libre", serif;
+   font-weight: 700;
+}
+h1 {
+   font-size: 40px;
+   margin-bottom: 25px;
+}
+h5 {
+   font-size: 20px;
+   margin-bottom: 8px;
+}
+#container {
+   background-color: rgba(171, 196, 171, 0.6);
+   display: flex;
+   flex-direction: column;
+   flex-wrap: wrap;
+   width: 460px;
+   height: 540px;
+   margin-left: 200px;
+   border-radius: 5px;
+   color: #fff;
+   padding: 60px;
+}
+form {
+   display: flex;
+   flex-direction: column;
+}
+.inputTitle {
+   margin-bottom: 8px;
+   font-size: 18px;
+}
+#billAmount,
+#people {
+   padding: 8px 8px 6px 0;
+   margin-bottom: 25px;
+   border: none;
+   border-bottom: 1px solid #fff;
+   background-color: transparent;
+   outline: 0;
+   color: #fff;
+   font-size: 16px;
+}
+#billAmount::placeholder,
+#people::placeholder {
+   color: rgba(255, 255, 255, 0.5);
+}
+#billAmount:focus,
+#people:focus {
+   border-bottom: 1px solid #ffba08;
+}
+.fa-receipt,
+.fa-user-plus {
+   margin-right: 10px;
+}
+button {
+   padding: 13px;
+   border: none;
+   font-size: 17px;
+   color: #fff;
+   border-radius: 4px;
+   cursor: pointer;
+   text-transform: uppercase;
+   font-family: "Rubik", sans-serif;
+}
+#addTipBtn {
+   background-color: #ffba08;
+}
+#splitBtn {
+   background-color: #947eb0;
+   margin-top: 10px;
+}
+#radioBtn {
+   display: none;
+}
+.tips {
+   display: flex;
+   gap: 5px;
+   font-size: 16px;
+}
+input[type="radio"] {
+   display: none;
+}
+input[type="radio"] + label {
+   padding: 12px;
+   background-color: #abc4ab;
+   border-radius: 4px;
+   margin-top: 5px;
+   flex: 1;
+   text-align: center;
+}
+input[type="radio"]:checked + label {
+   background-color: #788978;
+}
+#amountPerPerson {
+   display: flex;
+   gap: 10px;
+   margin-top: 40px;
+   font-size: 17px;
+}
+#billSplit,
+#totalTip,
+#totaBill {
+   background-color: #788978;
+   flex: 1;
+   padding: 20px;
+   border-radius: 4px;
+}
